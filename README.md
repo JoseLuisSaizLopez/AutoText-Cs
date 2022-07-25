@@ -19,7 +19,7 @@ ___
 Este csv contiene 15M de regitros, equivale a un archivo de 1,20GB de datos
 <img src="https://user-images.githubusercontent.com/76432050/180826856-4069bce9-bbfc-40af-94cd-b352f859f0c3.png"/>
 <br><br>
-Abrimos este y otros archivos más para tratarlos dentro del programa (y los dividimos en grupos de 100K de registros)
+Abrimos este y otros archivos más para tratarlos dentro del programa (y los dividimos en grupos de 100K registros)
 <br>
 <img src="https://user-images.githubusercontent.com/76432050/180828106-e33ecd8f-bad4-4bf5-9b91-0d30a4c72a3d.png"/>
 <img src="https://user-images.githubusercontent.com/76432050/180828621-cc57b4a3-b74d-49c5-8a2e-fe2afcba4610.png"/>
