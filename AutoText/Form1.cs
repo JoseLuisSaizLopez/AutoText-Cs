@@ -155,6 +155,16 @@ namespace AutoText
                     processThread.IsBackground = true;
                     processThread.Start();
                 }
+                else
+                {
+                    //No se puede procesar, volvemos a activar el botón
+                    isProcessing = false;
+                }
+            }
+            else
+            {
+                //No se puede procesar, volvemos a activar el botón
+                isProcessing = false;
             }
         }
 
@@ -315,7 +325,12 @@ namespace AutoText
             {
                 Debug.WriteLine("No se ha podido escribir el archivo...");
             }
-            progressBar1.BeginInvoke(new MethodInvoker(() => progressBar1.Value++));
+            //ProgressBar bug fix
+            if (progressBar1.Maximum == progressBar1.Value)
+            {
+                progressBar1.BeginInvoke(new MethodInvoker(() => ++progressBar1.Maximum));
+            }
+            progressBar1.BeginInvoke(new MethodInvoker(() => ++progressBar1.Value));
         }
 
 

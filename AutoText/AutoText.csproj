@@ -47,6 +47,15 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>autotext_logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -109,6 +118,7 @@
     <None Include="res\img\csv_icon.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="autotext_logo.ico" />
     <Content Include="res\img\reload_icon.png" />
   </ItemGroup>
   <ItemGroup>
